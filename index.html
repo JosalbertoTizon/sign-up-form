@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="background-image-box">
+    <img class="background-image" src="images/plant_bg" alt="plant background">
+  </div>
+  <div class="main-box">
+    <div class="header">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to</div>
+    <form id="sign-up-form" action="#" method="post">
+      <div class="sign-up-header">Let's do this!</div>
+      <div>
+        <div>
+          <label class="input-label" for="first-name">FIRST NAME</label>
+          <input type="text" name="first-name" class="input-box" id="first-name" required>
+        </div>
+        <div>
+          <label class="input-label" for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" class="input-box" id="last-name" required>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label class="input-label" for="email">EMAIL</label>
+          <input type="email" name="email" class="input-box" id="email" required>
+        </div>
+        <div>
+          <label class="input-label" for="phone-number">PHONE NUMBER</label>
+          <input type="tel" name="phone-number" class="input-box" id="phone-number" required>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label class="input-label" for="password">PASSWORD</label>
+          <input type="password" name="password" class="input-box" id="password" required>
+        </div>
+        <div>
+          <label class="input-label" for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm-password" class="input-box" id="confirm-password" required>
+        </div>
+      </div>
+    </form>
+    <div class="footer">
+      <button form="sign-up-form" type="submit">Create Account</button>
+      <div class="already-have-account"></div>
+      <div class="login"></div>
+    </div>
+  </div>
+</body>
+</html>
