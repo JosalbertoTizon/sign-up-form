@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="background-image-box">
-    <img class="background-image" src="images/plant_bg" alt="plant background">
+    <div class="logo-box">
+      <img src="images/odin-lined.png" alt="odin-logo">
+      <div class="odin-name">ODIN</div>
+    </div>
+    <div class="photo-author">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></div>
   </div>
   <div class="main-box">
     <div class="header">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to</div>
@@ -38,18 +42,18 @@
       <div>
         <div>
           <label class="input-label" for="password">PASSWORD</label>
-          <input type="password" name="password" class="input-box" id="password" required>
+          <input type="password" name="password" class="input-box error" id="password" required>
+          <label for="password">* Passwords do not match</label>
         </div>
         <div>
           <label class="input-label" for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm-password" class="input-box" id="confirm-password" required>
+          <input type="password" name="confirm-password" class="input-box error" id="confirm-password" required>
         </div>
       </div>
     </form>
     <div class="footer">
       <button form="sign-up-form" type="submit">Create Account</button>
-      <div class="already-have-account"></div>
-      <div class="login"></div>
+      <div class="already-have-account">Already have an account? <a href="#" class="login">Log in</a></div>
     </div>
   </div>
 </body>
